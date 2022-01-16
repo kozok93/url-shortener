@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="myscript.js">
+
+  </script>
+  <title>Shortly URL shortening API Challenge</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <nav>
+    <div class="nav-flex-wrapper">
+      <img src="images/logo.svg" height="25px" width="45px" alt="logo icon">
+      <div id="hamburger-btn" class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  <div id="menu-mobile" class="menu-mobile is-active">
+    <ul>
+      <li>Features</li>
+      <li>Pricing</li>
+      <li>Resources</li>
+    </ul>
+    <hr>
+    <button class="call-to-action login-button">Login</button>
+    <button class="call-to-action menu-sign-up-btn" type="button" name="button">Sign Up</button>
+  </div>
+  </nav>
+  <section class="landing-page">
+    <img id="illustration-working-man" src="images/illustration-working.svg" alt="Illustration of man working" class="illustration-working-man" height="330px" width="480px">
+    <h1 class="header-landing-page">More than just shorter links</h1>
+    <p class="paragraph-landing-page">Build your brand’s recognition and get detailed insights
+    on how your links are performing.</p>
+    <button class="call-to-action" type="submit" name="button">Get started</button>
+  </section>
+  <section class="shortener-section">
+    <form class="shortener-form" id="shortener-form" action="" method="get">
+      <input id="input-shortener" type="text" name="Link Input"  placeholder="Shorten a link here..." autocomplete="off">
+      <p id="error-notice" class="error-notice hidden-error-notice  active-error-notice ">Please add a link</p>
+      <button id="button-shortener" class="button-shortener" type="submit" name="button">Shorten It</button>
+      </form>
+    <div class="shortener-box-results">
+      <p class="paragraph-unshortened-link">www.google.com</p>
+      <hr>
+      <p class="paragraph-shortened-link">www.google.com</p>
+      <button class="copy-btn" type="button" name="button">Copy</button>
+    </div>
+    <div class="shortener-box-results">
+      <p class="paragraph-unshortened-link">www.google.com</p>
+      <hr>
+      <p class="paragraph-shortened-link">www.google.com</p>
+      <button class="copy-btn" type="button" name="button">Copy</button>
+    </div>
+    <div class="shortener-box-results">
+      <p class="paragraph-unshortened-link">www.google.com</p>
+      <hr>
+      <p class="paragraph-shortened-link">www.google.com</p>
+      <button class="copy-btn" type="button" name="button">Copy</button>
+    </div>
+  </section>
+  <section class="functionality-boxes-section">
+    <h2 class="functionality-boxes-header">Advanced statistics</h2>
+    <p class="functionality-boxes-subheader">  Track how your links are performing across the web with our advanced statistics dashboard.
+    </p>
+    <article class="functionality-boxes">
+      <div class="icon-purple-circle">
+        <img src="images/icon-brand-recognition.svg" alt="Brand recognition">
+      </div>
+      <h3>Brand Recognition</h3>
+      <p> Boost your brand recognition with each click. Generic links don’t
+        mean a thing. Branded links help instil confidence in your content.
+      </p>
+    </article>
+    <article class="functionality-boxes">
+      <div class="icon-purple-circle">
+        <img src="images/icon-detailed-records.svg" alt="Icon detailed records">
+      </div>
+      <h3>Detailed Records</h3>
+      <p>Gain insights into who is clicking your links. Knowing when and where
+      people engage with your content helps inform better decisions.
+      </p>
+    </article>
+    <article class="functionality-boxes">
+      <div class="icon-purple-circle">
+        <img class="functionality-boxes-image" src="images/icon-fully-customizable.svg" alt="Fully Customizable Icon">
+      </div>
+      <h3>Fully Customizable</h3>
+      <p>
+          Improve brand awareness and content discoverability through customizable
+          links, supercharging audience engagement.
+      </p>
+    </article>
+  </section>
+  <section class="call-to-action-pre-footer-section">
+    <h2 class="cta-headline">Boost your links today</h2>
+    <button class="call-to-action call-to-action-pre-footer" type="button" name="button">Get started</button>
+  </section>
+  <footer class="footer-section">
+    <img src="images/logo.svg" alt="Logo icon">
+    <h4 class="footer-headlines">Features</h4>
+      <ul>
+        <li>Link Shortening</li>
+        <li>Branded Links</li>
+        <li>Analytics</li>
+      </ul>
+    <h4 class="footer-headlines">Resources</h4>
+      <ul>
+        <li>Blog</li>
+        <li>Developers</li>
+        <li>Support</li>
+      </ul>
+    <h4 class="footer-headlines">Company</h4>
+      <ul>
+        <li>About</li>
+        <li>Our Team</li>
+        <li>Carreers</li>
+        <li>Contact</li>
+      </ul>
+    <section class="icons-footer">
+      <img src="images/icon-facebook.svg" alt="Facebook icon">
+      <img src="images/icon-twitter.svg" alt="Twitter icon">
+      <img src="images/icon-pinterest.svg" alt="Pinterest icon">
+      <img src="images/icon-instagram.svg" alt="Instagram Icon">
+    </section>
+  </footer>
+</body>
+</html>
