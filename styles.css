@@ -1,4 +1,8 @@
-
+@font-face {
+  font-family: 'Poppins';
+  src: url("fonts/Poppins/Poppins-Bold.ttf") format('ttf'),
+       url("fonts/Poppins/Poppins-Medium.ttf") format('ttf');
+}
 
 :root {
   /* Colors */
