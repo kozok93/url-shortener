@@ -8,10 +8,9 @@ illustrationWorking = document.getElementById('illustration-working-man');
 //  Hamburger toggle on/off
 
 hamburgerBtn.addEventListener('click', () => {
-mobileMenu.classList.toggle('is-active');
-illustrationWorking.classList.toggle('is-menu-active');
+  mobileMenu.classList.toggle('is-active');
+  illustrationWorking.classList.toggle('is-menu-active');
 })
-
 // konstanty pro validaci inputu
 
 const inputShortener = document.getElementById('input-shortener');
@@ -74,8 +73,8 @@ buttonShortener.addEventListener('click', (event) => {
 // event listener pro button
 
 copyBtn.addEventListener('click', (e) => {
-  inputShortener.select();
-    navigator.clipboard.writeText(inputShortener.value);
+
+    navigator.clipboard.writeText(`${shortLinkParagraph.innerHTML}`);
     copyBtn.innerHTML = 'Copied';
     copyBtn.style.background = 'purple';
 })

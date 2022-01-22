@@ -44,20 +44,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.nav-flex-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 50px 25px 0 25px;
-}
-
-.menu-mobile > ul {
+li {
   color: white;
   text-align: center;
-  line-height: 3;
-  padding-top: 30px;
   list-style: none;
-  font-weight: 700;
+  padding-bottom: 25px;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 h1 {
@@ -114,13 +107,26 @@ hr {
   opacity: 0.4;
 }
 
-li {
+.nav-flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 25px 0 25px;
+}
+
+/* ................. Mobile menu ............................................. */
+
+.menu-mobile > ul {
   color: white;
   text-align: center;
+  line-height: 2;
+  padding-top: 30px;
   list-style: none;
-  padding-bottom: 25px;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 700;
+}
+
+.menu-mobile li {
+  font-size: 16px;
 }
 
 .menu-mobile {
@@ -143,6 +149,27 @@ li {
   background-color: var(--clr-hamburger);
   margin: 6px;
 }
+
+.menu-mobile p {
+  color: var(--clr-btn-text);
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.menu-mobile button {
+  margin: 25px auto 0 auto;
+  background-color: var(--clr-buttons);
+  color: white;
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* ------------------------- Landing Page ------------------------------------- */
 
 .landing-page {
   overflow-x: hidden;
@@ -211,6 +238,7 @@ li {
       var(--clr-desktop-background) 0,
       var(--clr-desktop-background) 100%
     );
+  background-position: 0 250px;
 }
 
 .copy-btn {
@@ -255,7 +283,7 @@ li {
   top: -45px;
 }
 
-.icon-purple-circle > img {
+.icon-purple-circle img {
   width: 100%; /* or any custom size */
   height: 100%;
   object-fit: none;
@@ -291,10 +319,6 @@ li {
   font-size: 28px;
   color: var(--clr-boxes-with-short-links);
   padding-top: 100px;
-}
-
-.call-to-action-pre-footer {
-  padding-top: 10px;
 }
 
 .footer-section {
